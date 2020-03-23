@@ -1,0 +1,320 @@
+
+
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #212529;
+    background-color: #fff;
+    text-align: left;
+}
+
+
+
+#container {
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 991px;
+    line-height: 1;
+    display: flex; 
+   flex-direction: column;
+}
+
+
+
+header {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+/* le bloc lest est utilisé dans le header et le footer*/
+.blocleft {
+    background-color: #FFEA00;
+    width: 30%;
+    margin-left:auto;
+   
+
+ 
+}
+
+.blocright {
+    width: 70%;
+    padding-left: 10%;
+   
+}
+
+/* le big container contient un aside et un main*/
+.bigcontainer {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+/* le aside contient une section "à propos de moi"* et une section " contact" */
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: auto;
+}
+
+/* l'écran titre et le bloc "jaune" servent à mettre en couleur les titres et les paragraphe du aside. */
+.ecrantitre {
+    background-color: #212121;
+    color: #FFEA00;
+    width: 100%;
+}
+
+.blocjaune {
+    background-color: #FFEA00;
+ display:flex;
+}
+
+
+
+/* le main contient la section "xp" ( expériences pro) et la section formation*/
+
+main {
+    width: 70%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left:auto;
+    padding-left: 10%;
+}
+
+
+
+/* le bloc formation contient 2 blocs "dates" et "info" et 1 titre "title*/
+.formation {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* le bloc XP contien 2 blocs "dates" et "info" et 1 titre "title"*/
+.xp {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* le bloc title regroupes les titres des blocs "formations" et XP* mais également du footer*/
+.title {
+    width: 100%;
+    display : flex;
+}
+
+
+.puces 
+      {
+    width: 10%;
+  
+}
+.dates {
+    width: 40%;
+}
+
+.info {
+    width: 50%;
+}
+/* le footer contient les loisirs et les recommandations */
+footer {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+
+.blocrightfoot {
+    width: 70%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap:wrap;
+    padding-left: 10%;
+}
+
+.liste {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.txtcolor {
+    color: #FFEA00;
+}
+
+
+/* mise en page*/
+h1,  h3, h4{
+    text-transform: uppercase;
+    margin: 2px;
+}
+
+header h2{
+    font-weight:normal;
+}
+h2{
+    text-align:left;
+}
+ h5, h6 {
+    font-weight:normal;
+    text-align: left;
+    margin: 2px ;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+
+h4 {
+    font-size: 14px;
+}
+h5{
+    font-size: 13px;
+}
+h6 {
+    font-size: 12px;
+}
+
+
+ul{
+    margin: auto;
+}
+
+/* mise en page des UL dans les blocs formations et expériences profesionnelles*/
+ .formation li {
+    font-size: 14px;
+    list-style: none;
+    margin-bottom:80px
+    
+}
+
+   
+     
+ .formation .puces i {
+ 
+     display:flex;
+     flex-direction:column;
+margin-bottom: 80px;
+ 
+}
+ .xp .puces i{
+
+     display : flex;
+     flex-direction: column;
+     margin-bottom: 140px;
+   
+ }
+
+ 
+ .xp li {
+
+    font-size: 14px;
+    list-style: none;
+    margin-bottom: 140px;
+ }
+
+
+.blocjaune p {
+    font-size: 1rem;
+    padding-top: 10px;
+    padding-right: 10px;
+    line-height: 1;
+}
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+i {
+    maddin
+}
+.bordure {
+    border-bottom: 3px #FFEA00 solid;
+}
+
+
+.blocjaune i {
+    display: block;
+    width: 33%;
+    margin: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    height: 20px;
+  
+}
+.h2{
+    width:90%;
+    display:flex;
+}
+
+/* media query */
+
+
+
+
+@media all and (max-width: 800px) {
+
+    #container{
+        max-width: none;
+        font-size:small;
+        margin:0;
+        line-height: 1;
+    }
+    header {
+        flex-direction: column;
+    }
+
+    .blocleft {
+        width: 100%;
+    }
+
+    .blocright {
+        width: 100%;
+    }
+
+    .bigcontainer {
+        flex-direction: column-reverse;
+   
+        }
+
+    main
+    {
+       width: 100%;
+   padding-left: initial
+       }
+    .blocjaune
+    {
+    
+    }
+    aside {
+        width: 100%;
+        margin:auto;
+        margin-left: initial;
+        
+    }
+
+
+    footer {
+        flex-direction: column;
+        margin: 0;
+    }
+    .blocleftfoot{
+        padding-left:initial;
+    }
+    p{
+        margin:0;
+    }
+}
