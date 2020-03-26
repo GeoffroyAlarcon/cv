@@ -1,18 +1,11 @@
 
-
-
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     color: #212529;
     background-color: #fff;
-    text-align: left;
 }
-
-
-
 #container {
     margin: auto;
-    font-size: 1rem;
     font-weight: 400;
     max-width: 991px;
     line-height: 1;
@@ -41,16 +34,17 @@ header {
 
 .blocright {
     width: 70%;
-    padding-left: 10%;
+    padding-left: 5%;
    
 }
 
 /* le big container contient un aside et un main*/
 .bigcontainer {
     display: flex;
-    margin-right: auto;
     margin-left: auto;
-    width: 100%;
+    margin-right: auto;
+    width:100%;
+    margin:auto;
 }
 
 /* le aside contient une section "à propos de moi"* et une section " contact" */
@@ -60,39 +54,56 @@ aside {
     width: 30%;
     margin-left: auto;
 }
+address{
+    padding-left:20%;
+    margin:auto;
+    padding-top:10px;
+    padding-bottom:10px;
+}
 
+
+.contact section{
+    padding-bottom:20px;
+}
+.apropos section{
+    padding-bottom: 210px;
+}
 /* l'écran titre et le bloc "jaune" servent à mettre en couleur les titres et les paragraphe du aside. */
 .ecrantitre {
     background-color: #212121;
     color: #FFEA00;
-    width: 100%;
+   padding:5px;
+ 
 }
 
 .blocjaune {
     background-color: #FFEA00;
  display:flex;
+ flex-direction:column;
 }
 
-
+.apropos{
+    text-align:justify center;
+}
 
 /* le main contient la section "xp" ( expériences pro) et la section formation*/
 
 main {
     width: 70%;
-    margin-left: auto;
     display: flex;
     flex-direction: column;
-    margin-left:auto;
-    padding-left: 10%;
+   padding-left:5%;
+   text-align:left;
+ padding-top:0;
 }
-
-
+main h2{
+    margin: 0;
+}
 
 /* le bloc formation contient 2 blocs "dates" et "info" et 1 titre "title*/
 .formation {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 /* le bloc XP contien 2 blocs "dates" et "info" et 1 titre "title"*/
@@ -105,20 +116,43 @@ main {
 .title {
     width: 100%;
     display : flex;
+    flex-wrap: wrap;
+}
+.pucestitle {
+    font-size: 1em;
+    color: #FFEA00;
+    display:block;
+}
+.title h2{
+    width: 80%;
+}
+.puces{
+    width:5%;
+}
+.dates{
+    width:30%
 }
 
-
-.puces 
-      {
-    width: 10%;
-  
+.info
+{
+    width: 60%;
 }
-.dates {
-    width: 40%;
+li{
+    display:flex;
+    text-align:justify;
+    width: 100%;
 }
 
-.info {
-    width: 50%;
+main ul {
+    display:block;
+    flex-direction:column;
+    margin:0;
+margin:auto;
+width: 100%;
+padding-left:0;
+padding-top:50px;
+padding-bottom:50px;
+
 }
 /* le footer contient les loisirs et les recommandations */
 footer {
@@ -127,21 +161,34 @@ footer {
     margin-left: auto;
     width: 100%;
 }
+footer ul {
+    display:flex;
+    align-items:center;
+    margin-top:auto;
+    margin-bottom:auto; 
+}
+footer li {
+    display:flex;
+    margin:auto;
+ font-size: 2rem;
+    margin: auto;
+   }
+footer .liste{
+    width: 50%;
+}
 
 
+    
 .blocrightfoot {
     width: 70%;
     display: flex;
     margin-right: auto;
     margin-left: auto;
     flex-wrap:wrap;
-    padding-left: 10%;
+    padding-left: 5%;
 }
 
 .liste {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     flex-direction: column;
 }
@@ -163,6 +210,7 @@ header h2{
 }
 h2{
     text-align:left;
+    text-transform :uppercase;
 }
  h5, h6 {
     font-weight:normal;
@@ -186,43 +234,16 @@ h6 {
 }
 
 
-ul{
-    margin: auto;
+main p {
+    text-align: justify;
 }
 
 /* mise en page des UL dans les blocs formations et expériences profesionnelles*/
- .formation li {
-    font-size: 14px;
-    list-style: none;
-    margin-bottom:80px
+ 
     
-}
 
    
-     
- .formation .puces i {
- 
-     display:flex;
-     flex-direction:column;
-margin-bottom: 80px;
- 
-}
- .xp .puces i{
-
-     display : flex;
-     flex-direction: column;
-     margin-bottom: 140px;
-   
- }
-
- 
- .xp li {
-
-    font-size: 14px;
-    list-style: none;
-    margin-bottom: 140px;
- }
-
+    
 
 .blocjaune p {
     font-size: 1rem;
@@ -238,35 +259,34 @@ img {
     margin-right: auto;
 }
 
-i {
-    maddin
-}
+
 .bordure {
     border-bottom: 3px #FFEA00 solid;
-}
-
-
-.blocjaune i {
-    display: block;
-    width: 33%;
-    margin: auto;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    height: 20px;
   
 }
+.blocjaune h2{
+    text-align:center;
+}
+
+  
+
 .h2{
     width:90%;
     display:flex;
 }
+/*  mise en page des icones du footer */
 
+.fa-futbol{
+    font-size:1em;
+}
+.fa-theater-masks{
+font-size:1em;
+}
+.fa-chess-king{
+    font-size:1em;
+}
 /* media query */
-
-
-
-
 @media all and (max-width: 800px) {
-
     #container{
         max-width: none;
         font-size:small;
@@ -286,6 +306,7 @@ i {
     }
 
     .bigcontainer {
+       
         flex-direction: column-reverse;
    
         }
