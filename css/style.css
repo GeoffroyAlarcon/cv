@@ -4,13 +4,14 @@ body {
     color: #212529;
     background-color: #fff;
 }
+
 #container {
     margin: auto;
     font-weight: 400;
     max-width: 991px;
     line-height: 1;
-    display: flex; 
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -26,16 +27,14 @@ header {
 .blocleft {
     background-color: #FFEA00;
     width: 30%;
-    margin-left:auto;
-   
-
- 
+    margin-left: auto;
+    padding-top: 20px;
 }
 
-.blocright {
+header .blocright {
     width: 70%;
     padding-left: 5%;
-   
+    padding-top: 71px;
 }
 
 /* le big container contient un aside et un main*/
@@ -43,8 +42,8 @@ header {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width:100%;
-    margin:auto;
+    width: 100%;
+    margin: auto;
 }
 
 /* le aside contient une section "à propos de moi"* et une section " contact" */
@@ -54,36 +53,38 @@ aside {
     width: 30%;
     margin-left: auto;
 }
-address{
-    padding-left:20%;
-    margin:auto;
-    padding-top:10px;
-    padding-bottom:10px;
+
+address {
+    padding-left: 20%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
 }
 
 
-.contact section{
-    padding-bottom:20px;
+.contact section {
+    padding-bottom: 20px;
 }
-.apropos section{
-    padding-bottom: 210px;
+
+.apropos section {
+    padding-bottom: 229px;
 }
 /* l'écran titre et le bloc "jaune" servent à mettre en couleur les titres et les paragraphe du aside. */
 .ecrantitre {
     background-color: #212121;
     color: #FFEA00;
-   padding:5px;
- 
+    padding: 5px;
 }
 
 .blocjaune {
     background-color: #FFEA00;
- display:flex;
- flex-direction:column;
+    display: flex;
+    flex-direction: column;
 }
 
-.apropos{
-    text-align:justify center;
+.apropos {
+    text-align: justify center;
 }
 
 /* le main contient la section "xp" ( expériences pro) et la section formation*/
@@ -92,13 +93,14 @@ main {
     width: 70%;
     display: flex;
     flex-direction: column;
-   padding-left:5%;
-   text-align:left;
- padding-top:0;
+    padding-left: 5%;
+    text-align: left;
+    padding-top: 0;
 }
-main h2{
-    margin: 0;
-}
+
+h2 {
+        margin-bottom: 10px;
+    }
 
 /* le bloc formation contient 2 blocs "dates" et "info" et 1 titre "title*/
 .formation {
@@ -115,44 +117,47 @@ main h2{
 /* le bloc title regroupes les titres des blocs "formations" et XP* mais également du footer*/
 .title {
     width: 100%;
-    display : flex;
+    display: flex;
     flex-wrap: wrap;
 }
+
 .pucestitle {
     font-size: 1em;
     color: #FFEA00;
-    display:block;
-}
-.title h2{
-    width: 80%;
-}
-.puces{
-    width:5%;
-}
-.dates{
-    width:30%
+    display: block;
 }
 
-.info
-{
+.title h2 {
+    width: 80%;
+}
+
+.puces {
+    width: 5%;
+}
+
+.dates {
+    width: 30%
+}
+
+.info {
     width: 60%;
 }
-li{
-    display:flex;
-    text-align:justify;
+
+li {
+    display: flex;
+    text-align: justify;
     width: 100%;
 }
 
 main ul {
-    display:block;
-    flex-direction:column;
-    margin:0;
-margin:auto;
-width: 100%;
-padding-left:0;
-padding-top:50px;
-padding-bottom:50px;
-
+    display: block;
+    flex-direction: column;
+    margin: 0;
+    margin: auto;
+    width: 100%;
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 /* le footer contient les loisirs et les recommandations */
 footer {
@@ -161,30 +166,46 @@ footer {
     margin-left: auto;
     width: 100%;
 }
-footer ul {
-    display:flex;
-    align-items:center;
-    margin-top:auto;
-    margin-bottom:auto; 
+
+    footer ul {
+        display: flex;
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-bottom: 34px;
+    }
+
+li {
+    padding-bottom: 20px;
 }
+
 footer li {
-    display:flex;
-    margin:auto;
- font-size: 2rem;
+    display: flex;
     margin: auto;
-   }
-footer .liste{
+    font-size: 2rem;
+    margin: auto;
+}
+
+footer .liste {
     width: 50%;
+    margin-top: 20px;
+}
+
+.bigcontainer li {
+    margin-top: 20px;
 }
 
 
-    
+footer .blocleft {
+    padding-top: 0;
+}
+
 .blocrightfoot {
     width: 70%;
     display: flex;
     margin-right: auto;
     margin-left: auto;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     padding-left: 5%;
 }
 
@@ -198,58 +219,72 @@ footer .liste{
     color: #FFEA00;
 }
 
-
 /* mise en page*/
-h1,  h3, h4{
-    text-transform: uppercase;
-    margin: 2px;
-}
-
-header h2{
-    font-weight:normal;
-}
-h2{
-    text-align:left;
-    text-transform :uppercase;
-}
- h5, h6 {
-    font-weight:normal;
-    text-align: left;
-    margin: 2px ;
-}
-
 h1 {
-    font-size: 20px;
+    font-size: 30px;
 }
+
+h1, h3, h4 {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    font-weight: normal;
+}
+
+h2 {
+    text-align: left;
+    text-transform: uppercase;
+}
+
+h5, h6 {
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
 
 
 h4 {
+    font-size: 16px;
+}
+
+h5 {
     font-size: 14px;
 }
-h5{
-    font-size: 13px;
-}
+
 h6 {
     font-size: 12px;
 }
 
+p {
+    font-size: 13px;
+}
 
 main p {
     text-align: justify;
+    margin: 0;
+}
+
+footer address {
+    padding: 0;
+    margin: 0;
 }
 
 /* mise en page des UL dans les blocs formations et expériences profesionnelles*/
- 
-    
 
-   
-    
+
+
+
 
 .blocjaune p {
-    font-size: 1rem;
     padding-top: 10px;
     padding-right: 10px;
-    line-height: 1;
+    line-height: 1.5;
+    margin-left: 30px;
 }
 
 
@@ -262,37 +297,55 @@ img {
 
 .bordure {
     border-bottom: 3px #FFEA00 solid;
-  
-}
-.blocjaune h2{
-    text-align:center;
 }
 
-  
+.blocjaune h2 {
+    text-align: center;
+}
 
-.h2{
-    width:90%;
-    display:flex;
+
+
+.h2 {
+    width: 90%;
+    display: flex;
+}
+
+
+/* mise en page des icones dans les titres formations, xp et recoomandation*/
+.fa-graduation-cap {
+    margin-right: 20px;
+}
+
+.fa-briefcase {
+    margin-right: 20px;
+    color: #FFEA00;
+}
+
+.fa-edit {
+    margin-right: 20px;
+    color: #FFEA00;
 }
 /*  mise en page des icones du footer */
+.fa-futbol {
+    font-size: 1em;
+}
 
-.fa-futbol{
-    font-size:1em;
+.fa-theater-masks {
+    font-size: 1em;
 }
-.fa-theater-masks{
-font-size:1em;
-}
-.fa-chess-king{
-    font-size:1em;
+
+.fa-chess-king {
+    font-size: 1em;
 }
 /* media query */
 @media all and (max-width: 800px) {
-    #container{
+    #container {
         max-width: none;
-        font-size:small;
-        margin:0;
+        font-size: small;
+        margin: 0;
         line-height: 1;
     }
+
     header {
         flex-direction: column;
     }
@@ -303,28 +356,25 @@ font-size:1em;
 
     .blocright {
         width: 100%;
+        padding-top: 30px;
     }
 
     .bigcontainer {
-       
         flex-direction: column-reverse;
-   
-        }
-
-    main
-    {
-       width: 100%;
-   padding-left: initial
-       }
-    .blocjaune
-    {
-    
     }
+
+    main {
+        width: 100%;
+        padding-left: initial
+    }
+
+    .blocjaune {
+    }
+
     aside {
         width: 100%;
-        margin:auto;
+        margin: auto;
         margin-left: initial;
-        
     }
 
 
@@ -332,10 +382,12 @@ font-size:1em;
         flex-direction: column;
         margin: 0;
     }
-    .blocleftfoot{
-        padding-left:initial;
+
+    .blocleftfoot {
+        padding-left: initial;
     }
-    p{
-        margin:0;
+
+    p {
+        margin: 0;
     }
 }
