@@ -1,13 +1,11 @@
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    color: #212529;
+    font-family:sherif;
     background-color: #fff;
 }
 
 #container {
-    margin: auto;
-    font-weight: 400;
+  
     max-width: 991px;
     line-height: 1;
     display: flex;
@@ -15,7 +13,9 @@ body {
 }
 
 
-
+img{
+   
+}
 header {
     display: flex;
     margin-right: auto;
@@ -28,7 +28,7 @@ header {
     background-color: #FFEA00;
     width: 30%;
     margin-left: auto;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 header .blocright {
@@ -55,21 +55,21 @@ aside {
 }
 
 address {
-    padding-left: 20%;
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 30px;
+    font-style:initial;
     font-size: 14px;
+    line-height:1.5;
+    font-weight:900;
 }
 
 
-.contact section {
+.contact p{
     padding-bottom: 20px;
+   font-weight:900;
+   
 }
 
-.apropos section {
-    padding-bottom: 229px;
-}
+
 /* l'écran titre et le bloc "jaune" servent à mettre en couleur les titres et les paragraphe du aside. */
 .ecrantitre {
     background-color: #212121;
@@ -84,7 +84,8 @@ address {
 }
 
 .apropos {
-    text-align: justify center;
+    text-align: justify;
+padding-bottom:125px;
 }
 
 /* le main contient la section "xp" ( expériences pro) et la section formation*/
@@ -169,10 +170,8 @@ footer {
 
     footer ul {
         display: flex;
-        align-items: center;
-        margin-top: auto;
-        margin-bottom: auto;
-        padding-bottom: 34px;
+        padding:0px 70px;
+        margin-top:24px;
     }
 
 li {
@@ -285,6 +284,8 @@ footer address {
     padding-right: 10px;
     line-height: 1.5;
     margin-left: 30px;
+    margin-top:0;
+margin-bottom:0;
 }
 
 
@@ -312,6 +313,11 @@ img {
 
 
 /* mise en page des icones dans les titres formations, xp et recoomandation*/
+
+.i {
+  font-size: 1em;
+  color: #FFEA00;
+}
 .fa-graduation-cap {
     margin-right: 20px;
 }
