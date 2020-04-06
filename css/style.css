@@ -13,8 +13,11 @@ body {
 }
 
 
-img{
-   
+
+.ombre{
+  
+    border-radius: 120px;
+    box-shadow: 10px 10px 10px 10px black;
 }
 header {
     display: flex;
@@ -134,6 +137,7 @@ h2 {
 
 .puces {
     width: 5%;
+    color: #FFEA00;
 }
 
 .dates {
@@ -326,7 +330,11 @@ img {
     margin-right: 20px;
     color: #FFEA00;
 }
-
+.fa-cross {
+    color: #FFEA00;
+    border: 1px #FFEA00 solid;
+    border-radius:120%;
+}
 .fa-edit {
     margin-right: 20px;
     color: #FFEA00;
