@@ -1,23 +1,31 @@
 
 body {
-    font-family:sherif;
+    font-family:"FiraSans-Book";
     background-color: #fff;
 }
 
-#container {
+ @font-face{
+   font-family: "FiraSans-Book";
+   src: url("font/FiraSans-Book.otf")
+ }
+
+#container { 
   
     max-width: 991px;
     line-height: 1;
     display: flex;
     flex-direction: column;
+    margin:auto;
 }
 
 
 
 .ombre{
   
-    border-radius: 120px;
-    box-shadow: 10px 10px 10px 10px black;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 4px white;
+    overflow: hidden
+
 }
 header {
     display: flex;
@@ -88,7 +96,7 @@ address {
 
 .apropos {
     text-align: justify;
-padding-bottom:125px;
+padding-bottom:306px;
 }
 
 /* le main contient la section "xp" ( expériences pro) et la section formation*/
@@ -284,10 +292,8 @@ footer address {
 
 
 .blocjaune p {
-    padding-top: 10px;
-    padding-right: 10px;
     line-height: 1.5;
-    margin-left: 30px;
+    margin: 10px;
     margin-top:0;
 margin-bottom:0;
 }
@@ -314,6 +320,8 @@ img {
     width: 90%;
     display: flex;
 }
+
+
 
 
 /* mise en page des icones dans les titres formations, xp et recoomandation*/
@@ -353,6 +361,8 @@ img {
 }
 /* media query */
 @media all and (max-width: 800px) {
+
+    
     #container {
         max-width: none;
         font-size: small;
@@ -367,12 +377,19 @@ img {
     .blocleft {
         width: 100%;
     }
-
-    .blocright {
+        .blocright {
         width: 100%;
         padding-top: 30px;
     }
 
+    .ecrantitre {
+        background-color: white;
+        border-bottom: 2px solid #FFEA00;
+        color:black;
+    }
+    .blocjaune h2{
+        text-align:left;
+    }
     .bigcontainer {
         flex-direction: column-reverse;
     }
@@ -381,8 +398,15 @@ img {
         width: 100%;
         padding-left: initial
     }
-
+    ul .liste{
+        display: flex;
+        flex-direction:row;
+    }
+    li{
+        flex-wrap:wrap;
+    }
     .blocjaune {
+        background-color:white;
     }
 
     aside {
@@ -390,8 +414,16 @@ img {
         margin: auto;
         margin-left: initial;
     }
+    .xp .puces{
+        width:10%;
+    }
+    .xp .dates{
+        width:90%;
+    }
 
-
+    footer .liste{
+        width:100%;
+    }
     footer {
         flex-direction: column;
         margin: 0;
@@ -399,7 +431,11 @@ img {
 
     .blocleftfoot {
         padding-left: initial;
+        width:100%;
     }
+   .blocrightfoot{
+       width:100%;
+   }
 
     p {
         margin: 0;
